@@ -1,0 +1,16 @@
+Class:
+Personagem
+
+Atributos:
+private String _nome;
+private int _vida;
+private float _velocidadeAtaque;
+private float _velocidadeMovimento;
+private int _regeneracaodeVida;
+private String _armadura;
+private int _resistenciaMagica;
+
+Métodos: 
+public void FlechaDeCristalEncantada() {};
+public void RetadaMorte() {};
+
