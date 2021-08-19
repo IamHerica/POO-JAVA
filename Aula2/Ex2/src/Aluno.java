@@ -42,13 +42,15 @@ public class Aluno {
 
      public String SituacaoAluno() {
 
-        if (_Frequencia > 75 && _media >= 5)
+        if (_Frequencia < 75)
+            return "Reprovado por faltas";
+        else if (_media >= 5)
             return "Aprovado";
-        else if (_Frequencia > 75 && _media >= 3)
-            return "RE";
-        else if (_Frequencia < 75 || _media < 3)
+        else if (_media < 3)
             return "Reprovado";
         else
-            return "Reprovado por faltas";
+            return "RE";
+
+
     }
 }
